@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #e34c26;
+  --white: #fff;
+  --black: #000;
+  --yellow: #f1e05a;
+  --purple: #c6538c;
+  --violet: #543c78;
+  --blue: #3572a5;
+  --green: #89e051;
+}
