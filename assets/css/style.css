@@ -11,6 +11,9 @@ body {
   box-sizing: border-box;
 }
 
+li {
+  list-style-type: none;
+}
 :root {
   --red: #e34c26;
   --white: #fff;
@@ -18,6 +21,110 @@ body {
   --yellow: #f1e05a;
   --purple: #c6538c;
   --violet: #543c78;
-  --blue: #3572a5;
+  --blue: #0366d6;
   --green: #89e051;
+  --gray: #e1e4e8;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background: var(--black);
+}
+
+footer {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 50px;
+  margin: 32px auto;
+  display: grid;
+  /* justify-items: center; */
+  align-items: center;
+
+  grid-template-columns: 2fr 100px 2fr;
+  border-top: 1x solid var(--gray);
+  font-size: 12px;
+}
+
+footer .col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer .col .date {
+  margin: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .col .copy {
+  margin: 0 8px 0 0;
+  color: var(--gray);
+  flex: 0 0 20%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .col .links {
+  width: 100%;
+  flex: 1;
+  margin: 0 8px;
+}
+footer .col .links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .col .links ul li {
+  cursor: pointer;
+  color: var(--blue);
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+footer .col .links ul li:hover {
+  text-decoration: underline;
+}
+footer .col .links ul li:focus {
+  text-decoration: underline;
+}
+footer .col_2 .links ul {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .col_2 .links ul li {
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  cursor: pointer;
+  color: var(--blue);
+}
+footer .col_2 .links ul li:hover {
+  text-decoration: underline;
+}
+
+footer .col_2 .links ul li:focus {
+  text-decoration: underline;
+}
+
+footer .logo {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
