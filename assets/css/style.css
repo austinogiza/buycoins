@@ -198,9 +198,7 @@ footer .border {
 
 footer .container {
   width: 100%;
-
   font-weight: 400;
-
   display: grid;
   /* justify-items: center; */
   align-items: center;
@@ -404,7 +402,7 @@ footer .logo svg:focus {
   footer .col .copy {
     margin: 0;
     color: var(--gray);
-    flex: 0 0 30%;
+    flex: 0 0 35%;
   }
   footer .col {
     padding: 4px;
@@ -414,5 +412,11 @@ footer .logo svg:focus {
   }
   footer .col_2 .links ul li {
     margin: 0 4px;
+  }
+  footer .container {
+    height: 130px;
+    grid-gap: 5px;
+    padding: 10px;
+    grid-auto-rows: minmax(20px, auto);
   }
 }
