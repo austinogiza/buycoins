@@ -400,3 +400,11 @@ footer .logo svg:focus {
     display: none;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  footer .col .copy {
+    margin: 0 8px 0 0;
+    color: var(--gray);
+    flex: 0 0 30%;
+  }
+}
