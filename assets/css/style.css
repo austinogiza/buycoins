@@ -403,8 +403,8 @@ footer .logo svg:focus {
 
 @media only screen and (max-width: 450px) {
   footer .col .copy {
-    margin: 0 8px 0 0;
+    margin: 0;
     color: var(--gray);
-    flex: 0 0 30%;
+    flex: 0 0 35%;
   }
 }
