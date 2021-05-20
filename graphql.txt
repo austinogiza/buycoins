@@ -22,13 +22,7 @@ query {
               }
             }
           }, 
-          languages {
-            edges {
-              node {
-                id
-              }
-            }
-          },
+  
           primaryLanguage {
             id,
             color,
