@@ -324,6 +324,7 @@ footer .logo svg:focus {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     padding: 20px;
+    grid-auto-rows: minmax(20px, auto);
     justify-items: center;
     font-size: 10px;
   }
@@ -378,18 +379,17 @@ footer .logo svg:focus {
   }
   main .profile {
     width: 100%;
-
     flex-direction: row;
     max-width: 700px;
     min-height: 200px;
   }
   .profile .profile_image {
-    width: 50%;
+    width: 30%;
     height: auto;
     flex: 0 0 30%;
   }
   .profile .profile_image img {
-    width: 90%;
+    width: 80%;
     height: auto;
   }
   .profile .name {
