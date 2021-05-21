@@ -258,7 +258,8 @@ main .profile {
 }
 
 .repo_details {
-  height: auto;
+  min-height: 120px;
+  -webkit-min-height: 120px;
   width: 100%;
   display: grid;
   grid-template-columns: auto 100px;
