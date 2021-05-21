@@ -21,7 +21,7 @@ body {
 }
 
 :root {
-  --red: #e34c26;
+  --red: #f9826c;
   --white: #fff;
   --black: #000;
   --yellow: #f1e05a;
@@ -34,6 +34,10 @@ body {
   --dark: #24292e;
   --dark-gray: #586069;
   --lav: #eaecef;
+  --darker: #959da5;
+  --bg: #d1d5da;
+  --input-border: #e1e4e8;
+  --border-focus: #e1e4e8;
 }
 nav {
   width: 100%;
@@ -105,7 +109,7 @@ nav {
   flex-direction: row;
   height: 100%;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .repos_header .header ul li {
@@ -113,9 +117,57 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  max-width: 170px;
+  max-width: 200px;
   width: 100%;
   height: 56px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  transition: 0.3s ease-in;
+  color: var(--darker);
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.repos_header .header ul li:hover {
+  border-bottom: 1px solid var(--gray);
+}
+.repos_header .header ul li svg {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+  fill: var(--darker);
+}
+
+.active_tab {
+  font-weight: 600 !important;
+  color: var(--dark) !important;
+  border-bottom: 3px solid var(--red);
+}
+.active_tab svg {
+  fill: var(--dark) !important;
+}
+.number {
+  max-width: 30px;
+  background: var(--bg);
+  height: 20px;
+  width: 100%;
+  margin: 0 0 0 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  flex-direction: column;
 }
 main {
   width: 100%;
@@ -137,6 +189,53 @@ main .profile {
   min-height: 500px;
 }
 
+.repository {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.repository .form {
+  width: 100%;
+  height: 65px;
+}
+
+.repository .form input {
+  max-width: 900px;
+  width: 100%;
+  height: 32px;
+  border: 0.6px solid var(--input-border);
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--dark);
+  outline: none;
+  transition: 0.2s ease-in;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+}
+.repository .form input:focus {
+  border: 1px solid var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3);
+}
+
+.repo_update {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.repo_details {
+  min-height: 120px;
+  width: 100%;
+}
 .profile .profile_image {
   width: 280px;
   height: 280px;
