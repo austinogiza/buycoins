@@ -258,8 +258,7 @@ main .profile {
 }
 
 .repo_details {
-  min-height: 120px;
-  -webkit-min-height: 120px;
+  height: auto;
   width: 100%;
   display: grid;
   grid-template-columns: auto 100px;
@@ -276,7 +275,7 @@ main .profile {
 
 .repo_name {
   width: 100%;
-  min-height: 20px;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin: 0 0 8px 0;
