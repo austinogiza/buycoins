@@ -259,17 +259,16 @@ main .profile {
 
 .repo_details {
   max-height: 230px;
-  -webkit-maxn-height: 230px;
   width: 100%;
   display: grid;
   grid-template-columns: auto 100px;
   border-top: 1px solid #e1e4e8;
   padding: 20px 0;
+  margin: 8px 0;
 }
 
 .repo_text {
   width: 100%;
-  height: auto;
   max-width: 900px;
   display: flex;
   flex-direction: column;
@@ -277,7 +276,6 @@ main .profile {
 
 .repo_name {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   margin: 0 0 8px 0;
