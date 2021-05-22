@@ -26,7 +26,3 @@ const hoverLeave = ()=>{
 symbolStatus.addEventListener('mouseenter', hoverFn)
 symbolStatus.addEventListener('mouseleave', hoverLeave)
 window.addEventListener('scroll', scrollWindow)
-
-
-const fetch = require("node-fetch")
-

@@ -7,11 +7,22 @@ query {
   user(login: "austinogiza"){
     avatarUrl,
     bio,
+    name,
+    login,
     bioHTML,
+    status {
+      id,
+      message,
+      emoji,
+      emojiHTML,
+      
+    },
     repositories(first: 20, orderBy:{field: UPDATED_AT, direction: DESC}) {
       edges {
         node {
           id, 
+          name,
+          url,
         description,
           forkCount,
           stargazerCount,

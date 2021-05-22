@@ -275,6 +275,13 @@ main .profile {
   flex-direction: column;
 }
 
+.outputResult {
+  width: 100%;
+  min-height: 20px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+}
 .repo_name {
   width: 100%;
   min-height: 5px;
