@@ -110,6 +110,9 @@ body {
   padding: 5px 12px;
   font-size: 14px;
   font-weight: 300;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   color: var(--dark);
   outline: none;
   transition: 0.2s ease-in;

@@ -105,6 +105,9 @@ nav .search:hover input {
   -moz-transform: scaleY(1);
   -ms-transform: scaleY(1);
   -o-transform: scaleY(1);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 nav .search:focus {
   max-width: 400px;
