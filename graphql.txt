@@ -17,14 +17,27 @@ query {
       emojiHTML,
       
     },
-    repositories(first: 20, orderBy:{field: UPDATED_AT, direction: DESC}) {
+    repositories(first: 20, privacy: PUBLIC, orderBy:{field: UPDATED_AT, direction: DESC}) {
+      totalCount,
+
       edges {
         node {
           id, 
           name,
+          nameWithOwner,
           url,
         description,
           forkCount,
+  isFork,
+        parent{
+          name,
+          url,
+          nameWithOwner
+        },
+          licenseInfo {
+            id, name
+          },
+         
           stargazerCount,
           labels {
             edges {
@@ -33,7 +46,13 @@ query {
               }
             }
           }, 
-  
+repositoryTopics(first: 7){
+   nodes {
+            topic {
+              name
+            }
+          }
+},
           primaryLanguage {
             id,
             color,
