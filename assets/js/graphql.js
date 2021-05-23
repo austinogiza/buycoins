@@ -286,6 +286,11 @@ ${res.data.user.bio}
 
   pageLoader.classList.add('pageloader_hide')
     // outputResult.forEach()
+
+    setTimeout(()=>{
+
+      pageLoader.style.display = "none"
+    }, 100000)
     console.log(res)
     console.log(res.data.user)
     console.log(res.data.user)
