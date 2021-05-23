@@ -90,7 +90,6 @@ body {
   align-items: center;
   max-width: 500px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .home .login label {
@@ -175,6 +174,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .login_info h1 {
   font-size: 16px;
