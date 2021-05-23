@@ -246,6 +246,7 @@ nav .profile_nav .drop_down .chevron path {
   position: fixed;
   background: #0d1117;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 0;
@@ -254,6 +255,14 @@ nav .profile_nav .drop_down .chevron path {
   height: 100%;
   z-index: 999;
 }
+
+.pageloader h1 {
+  font-size: 20px;
+  color: var(--white);
+  margin: 16px 0;
+  text-align: center;
+}
+
 .pageloader img {
   max-width: 500px;
   min-height: 200px;
