@@ -94,9 +94,9 @@ const getUserRepo = {
             formPass.classList.add("form_passed_show")
             formPass.innerHTML = `
             <h1>${formValue} exists as a GitHub user, kindly wait as I fetch his repo for you</h1>`
-            sessionStorage.setItem("austinOgiza", formValue)
-            localStorage.setItem("austinOgiza", formValue)
-           
+      
+            localStorage.setItem("austinOgiza", JSON.stringify(formValue))
+      
             location.assign('/repo.html')
         }
         }

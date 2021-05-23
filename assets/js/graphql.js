@@ -60,13 +60,13 @@ const formFn =e=>{
   }
 
 formSubmitGQ.addEventListener('submit', formFn)
-
-// const formValue = localStorage.getItem("austinOgiza") || sessionStorage.getItem("austinOgiza")
-// alert(formValue)
+console.log(localStorage)
 
 const fetchStorage =()=>{
 
-const formValue = localStorage.getItem("austinOgiza") || sessionStorage.getItem("austinOgiza")
+const formValue = JSON.parse(localStorage.getItem("austinOgiza"))
+console.log(formValue)
+
 
 // alert(formValue)
       
@@ -303,7 +303,6 @@ ${res.data.user.bio}
 
 
 window.addEventListener('load', fetchStorage)
-window.document.addEventListener('DOMContentLoaded', fetchStorage)
 
 
 //scroll reveal small profile
