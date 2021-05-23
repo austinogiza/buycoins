@@ -290,7 +290,7 @@ ${res.data.user.bio}
     setTimeout(()=>{
 
       pageLoader.style.display = "none"
-    }, 100000)
+    }, 25000)
     console.log(res)
     console.log(res.data.user)
     console.log(res.data.user)
@@ -310,7 +310,6 @@ ${res.data.user.bio}
 
 window.addEventListener('load', fetchStorage)
 
-
 //scroll reveal small profile
 
 
@@ -326,6 +325,11 @@ const scrollWindow =()=>{
 }
 window.addEventListener('scroll', scrollWindow)
 
+
+setTimeout(()=>{
+
+  pageLoader.style.display = "none"
+}, 25000)
 
 
 
