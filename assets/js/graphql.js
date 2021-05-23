@@ -285,12 +285,10 @@ ${res.data.user.bio}
   })}
 
   pageLoader.classList.add('pageloader_hide')
+  pageLoader.style.display = "none"
     // outputResult.forEach()
 
-    setTimeout(()=>{
 
-      pageLoader.style.display = "none"
-    }, 25000)
     console.log(res)
     console.log(res.data.user)
     console.log(res.data.user)
@@ -324,13 +322,6 @@ const scrollWindow =()=>{
     }
 }
 window.addEventListener('scroll', scrollWindow)
-
-
-setTimeout(()=>{
-
-  pageLoader.style.display = "none"
-}, 25000)
-
 
 
 
