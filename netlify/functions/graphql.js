@@ -179,7 +179,7 @@ repo_count.innerHTML = `
 ${res.data.user.status !== null ? 
 `<div class="symbol">
 
-${res.data.user.status.emojiHTML !== null ? res.data.user.status.emojiHTML : ""} 
+<div class="emoji">${res.data.user.status.emojiHTML !== null ? res.data.user.status.emojiHTML : ""} </div>
 
 <h1>${res.data.user.status.message}</h1></div>`
 :""}
