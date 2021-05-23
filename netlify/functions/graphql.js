@@ -45,11 +45,6 @@ const format = date => {
 };
 
 
-const github= {
-  "token": "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",
-  "username": "austinogiza"
-}
-
 
 
 const formFn =e=>{

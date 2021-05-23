@@ -9,8 +9,6 @@ const buttonText = document.querySelector(".button p")
 
 
 
-
-
 const loading =()=>{
     buttonText.style.display = 'none'
     button.innerHTML = `<div class="loader"><img src="./assets/images/octocat-spinner-128.gif" alt=""></div>`
@@ -39,10 +37,7 @@ else{
 
     
 
-const github= {
-    "token": "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",
-    "username": "austinogiza"
-  }
+
   //api call start
   const baseUrl = 'https://api.github.com/graphql'
 

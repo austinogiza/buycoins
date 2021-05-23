@@ -1,7 +1,6 @@
 {
   "name": "getcard",
   "version": "1.0.0",
-  "description": "",
   "main": "graphql.js",
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -22,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/austinogiza/getcard/issues"
   },
-  "homepage": "https://github.com/austinogiza/getcard#readme"
+  "homepage": "https://github.com/austinogiza/getcard#readme",
+  "description": ""
 }
