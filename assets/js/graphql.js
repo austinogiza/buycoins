@@ -60,12 +60,11 @@ const formFn =e=>{
   }
 
 formSubmitGQ.addEventListener('submit', formFn)
-console.log(localStorage)
 
 const fetchStorage =()=>{
 
-const formValue = JSON.parse(localStorage.getItem("austinOgiza"))
-console.log(formValue)
+const formValue = localStorage.getItem("austinOgiza")
+
 
 
 // alert(formValue)

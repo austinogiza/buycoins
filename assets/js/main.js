@@ -95,7 +95,7 @@ const getUserRepo = {
             formPass.innerHTML = `
             <h1>${formValue} exists as a GitHub user, kindly wait as I fetch his repo for you</h1>`
       
-            localStorage.setItem("austinOgiza", JSON.stringify(formValue))
+            localStorage.setItem("austinOgiza", formValue)
       
             location.assign('/repo.html')
         }
