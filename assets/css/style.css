@@ -434,7 +434,7 @@ nav .profile_nav .drop_down .chevron path {
 }
 main {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   min-height: 1000px;
   margin: 0 auto;
   display: grid;
@@ -449,7 +449,8 @@ main .profile {
   align-items: flex-start;
   flex-direction: column;
   max-width: 300px;
-  min-height: 500px;
+  min-height: 300px;
+  margin-top: -10px;
 }
 
 .repository {
@@ -813,6 +814,11 @@ main .profile {
   -ms-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
   overflow: hidden;
+}
+
+.profile .profile_image .symbol .emoji {
+  width: 24px;
+  height: 24px;
 }
 .profile .profile_image .symbol h1 {
   opacity: 0;

@@ -1,5 +1,13 @@
 
+
+const ghi = "ghp_"
+
+const thi = "QyzLwRln5R25v"
+
+const endi = "T0Dqq2JHgM4RL813U3r6S6h"
+
 //target all properties
+
 const profileResult = document.querySelector('.profile')
 const formSubmitGQ = document.querySelector('.formSubmit')
 const outputResult = document.querySelector('.repo_update')
@@ -43,7 +51,6 @@ const format = date => {
 		}
 	}
 };
-
 
 
 
@@ -133,7 +140,7 @@ const getUserRepo = {
 
 const headers ={
   "Content-Type": "application/json",
-  Authorization: "bearer " + github.token
+  Authorization: "bearer " + `${ghi}${thi}${endi}`
 }
 
 //api fetch

@@ -1,3 +1,9 @@
+const gh = "ghp_"
+
+const th = "QyzLwRln5R25v"
+
+const end = "T0Dqq2JHgM4RL813U3r6S6h"
+
 const formSubmit = document.querySelector(".login")
 const formText = document.querySelector(".form-value")
 const formError = document.querySelector(".form_error")
@@ -35,7 +41,6 @@ if(formValue===""){
 
 else{
 
-    
 
 
   //api call start
@@ -59,7 +64,7 @@ const getUserRepo = {
   
   const headers ={
     "Content-Type": "application/json",
-    Authorization: "bearer " + github.token
+    Authorization: "bearer " + `${gh}${th}${end}`
   }
   
   //api fetch

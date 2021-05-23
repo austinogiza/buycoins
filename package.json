@@ -10,7 +10,9 @@
     "netlify-cli": "^3.30.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "netlify": "./node_modules/.bin/netlify",
+    "debug": "netlify dev --inspect"
   },
   "repository": {
     "type": "git",
