@@ -219,7 +219,7 @@ ${res.data.user.bio}
     <div class="repo_details">
     <div class="repo_text">
         <div class="repo_name">
-            <a href="${repo.node.url}">${repo.node.name}</a>
+            <a href="${repo.node.url}" target="_blank">${repo.node.name}</a>
     
            ${repo.node.isFork === true ? `<div class="forked_true">
            Forked from  ${repo.node.parent !== null ? ` <a href="${repo.node.parent.url}">  ${repo.node.parent.name}</a></div>` : "" }
