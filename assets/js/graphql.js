@@ -63,7 +63,9 @@ formSubmitGQ.addEventListener('submit', formFn)
 
 const fetchStorage =()=>{
 
-const formValue = sessionStorage.getItem("austinOgiza") || localStorage.getItem("austinOgiza") 
+const formValue = localStorage.getItem("austinOgiza") || sessionStorage.getItem("austinOgiza")
+
+alert(formValue)
       
 const baseUrl = 'https://api.github.com/graphql'
 
@@ -286,25 +288,20 @@ ${res.data.user.bio}
   pageLoader.classList.add('pageloader_hide')
   pageLoader.style.display = "none"
     // outputResult.forEach()
-
-
-    console.log(res)
-    console.log(res.data.user)
-    console.log(res.data.user)
-    console.log()
-    console.log(res.data.user.repositories.edges)
   })
     // console.log(res.json())
 })
 
   
 
- 
+
   
 };
 
 
 window.addEventListener('load', fetchStorage)
+window.document.addEventListener('DOMContentLoaded', fetchStorage)
+
 
 //scroll reveal small profile
 

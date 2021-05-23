@@ -27,7 +27,7 @@ const stopLoader = () => {
 const submitForm =e=>{
 e.preventDefault();
 const formValue = formText.value.toLowerCase().trim();
-console.log(formValue)
+
 formError.classList.remove("form_error_show")
 loading()
 
@@ -78,11 +78,11 @@ const getUserRepo = {
     const info = res.json().then(res=>
         {
 
-            console.log(res)
+      
 
         if(res.data.user === null){
             formPass.classList.remove("form_passed_show")
-            console.log(res)
+       
             formError.classList.add("form_error_show")
     formError.innerHTML = `
     <h1>${formValue} does not exist. Please enter a new username</h1>`
