@@ -1395,9 +1395,6 @@ footer .logo svg:focus {
   .repo_label ul {
     flex-wrap: wrap;
   }
-  .repo_label ul a {
-    flex-grow: 1;
-  }
 
   .repo_star {
     flex-wrap: wrap;
