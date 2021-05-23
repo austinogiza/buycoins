@@ -61,14 +61,14 @@ const formFn =e=>{
 
 formSubmitGQ.addEventListener('submit', formFn)
 
-const formValue = localStorage.getItem("austinOgiza") || sessionStorage.getItem("austinOgiza")
-alert(formValue)
+// const formValue = localStorage.getItem("austinOgiza") || sessionStorage.getItem("austinOgiza")
+// alert(formValue)
 
 const fetchStorage =()=>{
 
 const formValue = localStorage.getItem("austinOgiza") || sessionStorage.getItem("austinOgiza")
 
-alert(formValue)
+// alert(formValue)
       
 const baseUrl = 'https://api.github.com/graphql'
 
