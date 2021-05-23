@@ -46,7 +46,7 @@ const format = date => {
 
 
 const github= {
-  "token": "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",
+  "token": "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",
   "username": "austinogiza"
 }
 
