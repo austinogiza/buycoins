@@ -2,9 +2,11 @@
 
 const ghi = "ghp_"
 
-const thi = "QyzLwRln5R25v"
+const thi = "ptNEczcW9MQIRke"
 
-const endi = "T0Dqq2JHgM4RL813U3r6S6h"
+const endi = "c5hnUt6oIYZTBDl1XfntW"
+
+
 
 //target all properties
 

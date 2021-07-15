@@ -1,8 +1,8 @@
 const gh = "ghp_"
 
-const th = "QyzLwRln5R25v"
+const th = "ptNEczcW9MQIRke"
 
-const end = "T0Dqq2JHgM4RL813U3r6S6h"
+const end = "c5hnUt6oIYZTBDl1XfntW"
 
 const formSubmit = document.querySelector(".login")
 const formText = document.querySelector(".form-value")
